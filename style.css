@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: Roboto, sans-serif;
+    background-color: #89CFF0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    color: rgb(240, 240, 240);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    margin: 40px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 520px;
+    width: 300px;
+    border-radius: 5px;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 5px solid grey;
+    padding: 10px;
+    height: 120px;
+    text-align: end;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.current-num {
+    flex: 1.5;
+    width: 100%;
+    font-size: 40px;
+    color: grey;
+}
+
+.history-num {
+    flex: 1;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-wrap: nowrap;
+    font-size: 24px;
+    color: rgb(158, 158, 158);
+}
+
+.row-one, .row-two, .row-three, .row-four, .row-five {
+    display: flex;
+}
+
+.hover-button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 5px solid grey;
+    border-left: 5px solid grey;
+    height: 80px;
+    background-color: rgb(79, 140, 197);
+    cursor: pointer;
+    user-select: none;
+}
+
+.hover-button:hover {
+    background-color: rgb(123, 161, 197);
+}
+
+#clear {
+    flex: 3.15;
+}
+
+#divide, #multiply, #subtract,
+#plus, #equals {
+    border-right: 5px solid grey;
+}
+
+#equals {
+    background-color: rgb(7, 156, 7);
+    color: white
+}
+
+#equals:hover {
+    background-color: rgb(9, 179, 9);
+}
+
+#del {
+    font-size: 20px;
+}
